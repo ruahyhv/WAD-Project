@@ -1,6 +1,11 @@
 # WAD-Project
 e-commerce of K-beauty
 
+TEAM:
+Apopei Cristina-Andreea
+Coman Maria-Ruxandra
+Stanescu Denisa
+
 ------------- WEEK 1 -------------
 
 ** TASK 1.2 **

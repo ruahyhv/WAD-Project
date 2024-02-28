@@ -2,9 +2,9 @@
 e-commerce of K-beauty
 
 TEAM:
-Apopei Cristina-Andreea
-Coman Maria-Ruxandra
-Stanescu Denisa
+1. Apopei Cristina-Andreea
+2. Coman Maria-Ruxandra
+3. Stanescu Denisa
 
 ------------- WEEK 1 -------------
 

@@ -27,3 +27,9 @@ STORIES:
 ADMIN STORIES:
 1. The admins have access and also moderate the client database;
 2. The admins are able to manage the stock of products in the catalogue.
+
+Figma Task
+https://www.figma.com/file/KP17jx4UeaviRv0b3i2J2s/Untitled?type=design&node-id=0%3A1&mode=design&t=GCTVPKPWAaUD2vDB-1
+
+Trello Task
+https://trello.com/b/MuoJWpH6

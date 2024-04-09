@@ -19,7 +19,7 @@ STORIES:
 3. The products are organized in sections/steps of the Korean skincare routine system;
 4. The products can also be organized based on the celebrity that is promoting/using the products;
 5. They can pay the order by card (Mastercard, Visa etc.);
-6. After making an order, the total price is converted into digital currency (loyalty points) which can be later used for another order and get a discount;
+6. After making an order, the total price is converted into digital currency (loyalty points) which can be later used for another order and get a discount.
    
 
 ADMIN STORIES:

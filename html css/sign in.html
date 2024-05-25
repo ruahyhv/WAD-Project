@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="css/stylesignin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+
+    <div class="centered"> 
+        <br><br><br>
+        
+        <a href="home.html"><h1 align="center">Welcome to Korean Wave!</h1></a>
+        
+    
+        
+        <h2 align="center">Sign in here</h2>
+        <br>
+        
+     <!--  <form onsubmit="return validateForm()" action="signin.php" method="post">-->
+        
+        <p align="center">
+            <input type="text" id="username" name="username" placeholder="Username" style="padding-left: 10px; border-radius: 5px; border-color: #F9F7F8; height: 45px; width: 300px; font-size: 18px; font-family: 'Nunito', sans-serif; font-weight: 600; background: #F9F7F8; color: #D18AB4;" autocomplete="off">
+        </p>
+
+        
+        <p align="center">
+            <input type="password" id="password" name="password" placeholder="Password" style="padding-left: 10px; border-radius: 5px; border-color: #F9F7F8; height: 45px; width: 300px; font-size: 18px; font-family: 'Nunito', sans-serif; font-weight: 600; background: #F9F7F8; color: #D18AB4;" autocomplete="off">
+        </p>
+
+        
+       <p align="center" style="font-size: 17px; font-family: 'Nunito', sans-serif; color: #AF367F;">
+            <input type="checkbox"  autocomplete="off"> Stay signed in
+        </p>
+       
+        
+        <br>
+        
+        
+
+        
+        <p align="center">
+           <button type="submit"><i class="fa fa-arrow-right"></i></button>
+        </p>
+        
+                <div id="msgUsername">
+        </div>
+        <div id="msgPassword">
+        </div>
+        
+       <!-- </form>-->
+        
+        <br>
+        <br><br><br><br><br>
+        <div class="bot">
+            <p align="center" style="position: absolute; bottom: 8%; left: 35%;">
+            <a style="color: #731C4F;"href="forgot.html">FORGOT YOUR USERNAME?</a>
+            <br>
+            <a style="color: #731C4F;"href="forgot.html">FORGOT YOUR PASSWORD?</a>
+            <br>
+            <a style="color: #731C4F;"href="create%20acc.html">CREATE ACCOUNT</a>
+        </p>
+        </div>
+        
+				   
+    </div>
+     <div class="pink">
+         <img src="bg.png">
+     </div>
+        
+ <!--  <script>
+    function validateForm() {
+        let username = document.getElementById('username').value,
+            msgUsername = document.getElementById('msgUsername'),
+        	password = document.getElementById('password').value,
+            msgPassword = document.getElementById('msgPassword'),
+        	valid = true;
+
+       
+        
+            if (username.length < 1) {
+                msgUsername.innerHTML = 'Username must have minimum 3 letters';
+                valid = false;
+            }
+            else
+                msgUsername.innerHTML = '';
+
+            if (password.length < 1){
+                msgPassword.innerHTML = 'Password is too short';
+                valid = false;
+            }
+            else
+                msgPassword.innerHTML = '';
+
+        if (valid == true) {
+            return true;
+        }
+
+        return false;
+    }
+</script> -->
+        <footer>
+        <p>@2024</p>
+       <a href="home.html"> <p>Korean Wave</p></a>
+        <p>Terms of service</p>
+    </footer>
+</body>
+</html>

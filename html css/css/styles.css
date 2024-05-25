@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif; /* aici pui tu ce font vrei */
+    margin: 0;
+    padding: 0;
+    background-color: #fffbfb;
+}
+
+
+/* -------------------------- header -------------------------- */
+
+
+header {
+    background-color: rgba(219, 163, 196, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EA7BA8;
+    font-weight: bold;
+}
+
+.ah2 {
+    font-size: 22px;
+    color: #AF367F;
+    margin-left: 410px;
+    
+}
+
+.contact {
+    color: #EA7BA8;
+    font-weight: bold;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #AF367F;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    color: #CB7CAB;
+    margin-left: 400px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #AF367F;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.search-button:hover {
+    background-color: #b64188;
+}
+
+/* Additional styles */
+.poz {
+    margin-left: 10px;
+    height: 20px; /* adjust as needed */
+    margin-right: 20px;
+}
+
+a {
+    
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* -------------------------- footer -------------------------- */
+
+
+footer {
+    background-color: rgba(219, 163, 196, 0.6);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    display: inline; 
+    margin: 0 100px;
+}
+
+
+.photo-gallery {
+    max-width: 3000px; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+
+.wide-photo img {
+    width: 1903px;
+    height: 700px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.overlay-button {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #DBA3C4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px lightgrey;
+}
+
+
+.overlay-text {
+    margin-top: 10px;
+       background: linear-gradient(to right, #DBA3C4, white);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 35%;
+    left: 61%;
+}
+.overlay-text1 {
+     margin-top: 10px;
+    font-size: 30px;
+    position: absolute;
+       top: 41%;
+    left: 61.5%;
+    color: #AF367F;
+      text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+}
+.small-photos {
+    display: flex;
+    padding-top: 20px;
+}
+
+.small-photo {
+    position: relative; /* Required for absolute positioning */
+    flex: 1;
+    margin-right: 15px; /* Adjust spacing between small photos */
+    margin-left: 50px;
+}
+
+.small-photo:last-child {
+    margin-right: 0; /* Remove margin from last small photo */
+}
+
+.small-photo img {
+    width: 500px; /* Adjust image width as needed */
+    height: 500px; /* Adjust image height as needed */
+    display: block;
+}
+
+.small-photo .overlay-button {
+    position: absolute;
+    top: 8%;
+    left: 21%;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #F25292;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

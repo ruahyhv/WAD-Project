@@ -1,26 +1,23 @@
 body {
-    font-family: Arial, sans-serif; /* aici pui tu ce font vrei */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
- background-image:linear-gradient(to right, #DBA3C4, white); 
+    background-color: #FFF5F7; 
 }
-
-
-/* -------------------------- header -------------------------- */
-
 
 header {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
     display: flex;
     align-items: center;
-    /*justify-content: space-between;*/
-    
+    justify-content: space-between;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -36,20 +33,18 @@ nav ul li a {
 .ah2 {
     font-size: 22px;
     color: #AF367F;
-    margin-left: 410px;
-    
+    margin: 0 auto; /* Center Korean Wave */
 }
 
 .contact {
     color: #EA7BA8;
     font-weight: bold;
+    margin-right: 20px; 
 }
 
 .search-container {
     display: flex;
     align-items: center;
-    
-    
 }
 
 .search-input {
@@ -58,7 +53,6 @@ nav ul li a {
     border-radius: 5px 0 0 5px;
     font-size: 16px;
     color: #CB7CAB;
-    margin-left: 400px;
 }
 
 .search-button {
@@ -76,22 +70,14 @@ nav ul li a {
     background-color: #b64188;
 }
 
-/* Additional styles */
 .poz {
-    margin-left: 10px;
-    height: 20px; /* adjust as needed */
-    margin-right: 20px;
+    height: 20px;
 }
 
 a {
-    
     text-decoration: none;
     color: #333;
 }
-
-
-/* -------------------------- footer -------------------------- */
-
 
 footer {
     background-color: rgba(255, 255, 255, 0.7);
@@ -104,60 +90,126 @@ footer {
 }
 
 footer p {
-    display: inline; 
-    margin: 0 100px;
+    display: inline;
+    margin: 0 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.left {
+    width: 28%; /* Adjusted width */
+}
+
+.right {
+    width: 68%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 60px; 
+}
+
+.section-title {
+    color: #AF367F;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.rectangle {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.light-pink {
+    background-color: #F7D1E4;
+}
+
+.dark-pink {
+    background-color: #F2A1C4;
+}
+
+.rectangle p {
+    margin: 5px 0;
+}
+
+.rectangle ul {
+    padding-left: 20px;
+}
+
+.rectangle ul li {
+    margin-bottom: 5px;
+}
+
+.column {
+    width: calc(33.333% - 20px);
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+.product-description {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.trending-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.overlay-button {
+    padding: 10px 20px;
+    background-color: #DBA3C4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px lightgrey;
 }
 
 
 
+.product-name {
+    position: absolute;
+    bottom: -20px; 
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: palevioletred;
+    font-weight: bold;
+}
+.button {
+    position: absolute;
+    bottom: -69px; 
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
 
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin: 20px;
-        }
-
-        .left {
-            width: 40%;
-        }
-
-        .right {
-            width: 55%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .rectangle {
-            width: 100%;
-            border: 2px solid black;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-
-        .column {
-            width: 30%;
-            margin-bottom: 20px;
-        }
-
-        .image-container {
-            position: relative;
-            width: 100%;
-        }
-
-        .image-container img {
-            width: 100%;
-            height: auto;
-        }
-
-        .text {
-            margin-top: 10px;
-            text-align: center;
-        }
-
-        .button {
-            width: 100%;
-            margin-top: 10px;
-            text-align: center;
-        }
+.button button {
+    padding: 10px 20px;
+    background-color: #F25292; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px lightgrey;
+}

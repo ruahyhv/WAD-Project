@@ -1,26 +1,25 @@
+/* Your existing CSS code remains unchanged */
+
 body {
-    font-family: Arial, sans-serif; /* aici pui tu ce font vrei */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
- background-image:linear-gradient(to right, #DBA3C4, white); 
+    background-color: #FFF5F7; /* Very light pink background */
 }
-
-
-/* -------------------------- header -------------------------- */
-
 
 header {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
     display: flex;
     align-items: center;
-    /*justify-content: space-between;*/
-    
+    justify-content: space-between;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -36,20 +35,18 @@ nav ul li a {
 .ah2 {
     font-size: 22px;
     color: #AF367F;
-    margin-left: 410px;
-    
+    margin: 0 auto; /* Center Korean Wave */
 }
 
 .contact {
     color: #EA7BA8;
     font-weight: bold;
+    margin-right: 20px; /* Added margin to separate from the search button */
 }
 
 .search-container {
     display: flex;
     align-items: center;
-    
-    
 }
 
 .search-input {
@@ -58,7 +55,6 @@ nav ul li a {
     border-radius: 5px 0 0 5px;
     font-size: 16px;
     color: #CB7CAB;
-    margin-left: 400px;
 }
 
 .search-button {
@@ -76,22 +72,14 @@ nav ul li a {
     background-color: #b64188;
 }
 
-/* Additional styles */
 .poz {
-    margin-left: 10px;
-    height: 20px; /* adjust as needed */
-    margin-right: 20px;
+    height: 20px;
 }
 
 a {
-    
     text-decoration: none;
     color: #333;
 }
-
-
-/* -------------------------- footer -------------------------- */
-
 
 footer {
     background-color: rgba(255, 255, 255, 0.7);
@@ -104,58 +92,71 @@ footer {
 }
 
 footer p {
-    display: inline; 
-    margin: 0 100px;
+    display: inline;
+    margin: 0 20px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column; /* Change flex-direction to column */
+    align-items: center; /* Center items horizontally */
+    margin: 20px;
+}
 
+.section-title {
+    color: #AF367F;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
 
+.light-pink {
+    background-color: #F7D1E4;
+}
 
-   .container {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
-    }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-    }
+.column {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    position: relative;
+}
 
-    .column {
-        flex: 20%;
-        padding: 0 10px;
-    }
+.image-container {
+    position: relative;
+}
 
-    .image-container {
-        position: relative;
-        margin-bottom: 10px;
-    }
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+}
 
-    .image-container img {
-        width: 100%;
-        height: auto;
-    }
+.text {
+    margin-bottom: 10px;
+    color: #
+}
+        
+.row .new-button {
+     padding: 10px 20px;
+    background-color: #DBA3C4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px lightgrey;
+    justify-content: center;
+    align-items: center;
+}
+.newh3{
+    color: #AF367F;
+}
 
-    .overlay {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        padding: 10px;
-        display: none;
-    }
-
-    .image-container:hover .overlay {
-        display: block;
-    }
-
-    p {
-        text-align: center;
-        margin-top: 5px;
-    }
-
-
+.newp {
+    color: #DBA3C4;
+}

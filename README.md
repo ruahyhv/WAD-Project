@@ -4,9 +4,9 @@ e-commerce of K-beauty
 TEAM NAME: K-beauty team
 
 TEAM MEMBERS:
-1. Apopei Cristina-Andreea
-2. Coman Maria-Ruxandra
-3. Stanescu Denisa
+1. Apopei Cristina-Andreea (@cristinapopei)
+2. Coman Maria-Ruxandra (@blankusus)
+3. Stanescu Denisa (@ruahyhv)
    
 ABOUT THE PROJECT:
 An e-commerce website that sells korean cosmetics and skincare products. Taking advantage of the "korean wave", the website will have a separate section about actors/singers that are ambassadors of certain brands to promote the products.

@@ -11,7 +11,7 @@ TEAM MEMBERS:
 ABOUT THE PROJECT:
 An e-commerce website that sells korean cosmetics and skincare products. Taking advantage of the "korean wave", the website will have a separate section about actors/singers that are ambassadors of certain brands to promote the products.
 
------------------------------------------------
+------------------------------------------------
 
 STORIES:
 1. The client should create an account to make an order;
@@ -26,7 +26,7 @@ ADMIN STORIES:
 1. The admins have access and also moderate the client database;
 2. The admins are able to manage the stock of products in the catalogue.
 
------------------------------------------------
+------------------------------------------------
 
 Figma Task
 https://www.figma.com/file/KP17jx4UeaviRv0b3i2J2s/Untitled?type=design&node-id=0%3A1&mode=design&t=GCTVPKPWAaUD2vDB-1

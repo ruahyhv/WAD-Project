@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link rel="stylesheet" th:href="@{/css/styles.css}" type="text/css"/>
+</head>
+<body>
+<div th:fragment="header">
+  <header>
+    <nav>
+      <ul>
+        <li><a th:href="@{/products}">Skincare</a></li>
+        <li><a th:href="@{/products}">Makeup</a></li>
+        <li><a th:href="@{/brands}">Brands</a></li>
+        <li><a th:href="@{/idols}">Idols</a></li>
+      </ul>
+    </nav>
+    <a th:href="@{/home}" class="ah2"><h2>Korean Wave</h2></a>
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Search...">
+      <button type="submit" class="search-button">Search</button>
+    </div>
+    <a th:href="@{/sign-in}"><img class="poz" th:src="@{/images/sc.png}"></a>
+    <a href="#"><img class="poz" th:src="@{/images/sc.png}"></a>
+    <a th:href="@{/contact}" class="contact">Contact us</a>
+  </header>
+</div>
+
+<div th:fragment="footer">
+  <footer>
+    <p>@2024</p>
+    <a th:href="@{/home}"><p>Korean Wave</p></a>
+    <p>Terms of service</p>
+  </footer>
+</div>
+</body>
+</html>

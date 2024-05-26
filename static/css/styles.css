@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffbfb;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EA7BA8;
+    font-weight: bold;
+}
+
+.ah2 {
+    font-size: 22px;
+    color: #AF367F;
+    margin: 0 auto; /* Center Korean Wave */
+}
+.contact {
+    color: #EA7BA8;
+    font-weight: bold;
+    margin-right: 20px; /* Added margin to separate from the search button */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #AF367F;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    color: #CB7CAB;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #AF367F;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.search-button:hover {
+    background-color: #b64188;
+}
+
+.poz {
+
+    height: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer {
+    background-color: rgba(219, 163, 196, 0.6);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    display: inline;
+    margin: 0 20px;
+}
+
+.photo-gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.wide-photo {
+    position: relative;
+}
+
+.wide-photo img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+}
+
+.overlay-text {
+    margin: 10px 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.overlay-text1 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.overlay-button {
+    padding: 10px 20px;
+    background-color: #DBA3C4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px lightgrey;
+}
+
+.small-photos {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.small-photo {
+    position: relative;
+    flex: 1;
+    min-width: calc(33.333% - 10px);
+}
+
+.small-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.small-photo .overlay-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #F25292;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

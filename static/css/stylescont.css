@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif; /* aici pui tu ce font vrei */
+    margin: 0;
+    padding: 0;
+ background-image:linear-gradient(to right, #DBA3C4, white); 
+}
+
+
+/* -------------------------- header -------------------------- */
+
+
+header {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EA7BA8;
+    font-weight: bold;
+}
+
+.ah2 {
+    font-size: 22px;
+    color: #AF367F;
+    margin-left: 410px;
+    
+}
+
+.contact {
+    color: #EA7BA8;
+    font-weight: bold;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #AF367F;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    color: #CB7CAB;
+    margin-left: 400px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #AF367F;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.search-button:hover {
+    background-color: #b64188;
+}
+
+/* Additional styles */
+.poz {
+    margin-left: 10px;
+    height: 20px; /* adjust as needed */
+    margin-right: 20px;
+}
+
+a {
+    
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* -------------------------- footer -------------------------- */
+
+
+footer {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    display: inline; 
+    margin: 0 100px;
+}
+
+
+
+
+
+    .container {
+        display: flex;
+    }
+
+    .left-rectangle {
+        width: 400px;
+        height: 600px;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        margin-top: 50px;
+        margin-left: 450px;
+        color: #731C4F;
+    }
+.left-rectangle h1 {
+    margin-top: 80px;    
+}
+.left-rectangle p {
+    font-size: 25px;  
+}
+
+    .right-rectangle {
+        width: 500px;
+        height: 600px;
+        background-color: rgba(255, 255, 255, 0.4);
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+
+    .textbox {
+        width: 400px;
+        height: 70px;
+        margin-bottom: 10px;
+        padding: 8px;
+        box-sizing: border-box;
+        display: block; /* Make text boxes stack vertically */
+        background-color: #F9F7F8;
+        margin-left: 45px;
+        margin-top: 80px;
+        color: #D18AB4;
+        font-size: 20px;
+    }
+    .textbox1{
+        width: 400px;
+        height: 300px;
+        margin-bottom: 10px;
+        padding: 8px;
+        box-sizing: border-box;
+        display: block; /* Make text boxes stack vertically */
+        background-color: #F9F7F8;
+        margin-left: 45px;
+        color: #D18AB4;
+        font-size: 20px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        background-color: #F25292;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 200px;
+        margin-left: 140px;
+        font-size: 15px;
+        box-shadow: 3px 3px 5px lightgrey;
+    }

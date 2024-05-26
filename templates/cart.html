@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link rel="stylesheet" th:href="@{/css/main.css}" type="text/css"/>
+  <title>Cart</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+<div th:replace="fragments/general :: top"></div>
+<form th:object="${cart}" th:action="@{/cart/checkout}" method="post">
+  <div th:each="entry : ${cart.products}">
+    <span th:text="${entry.key.name}">Product Name</span>
+    <span>Quantity: </span>
+    <input type="number" th:value="${entry.value}" th:name="quantities[__${entry.key.id}__]" min="1"/>
+  </div>
+  <div>Total Price: <span th:text="${totalPrice}">0</span></div>
+  <button type="submit">Checkout</button>
+</form>
+</body>
+</html>

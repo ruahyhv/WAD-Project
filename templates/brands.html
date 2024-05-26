@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Brands</title>
+</head>
+<body>
+<h1>Brands</h1>
+<ul>
+    <li th:each="brand : ${brands}" th:text="${brand}"></li>
+</ul>
+</body>
+</html>

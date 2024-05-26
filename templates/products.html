@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{/css/main.css}" type="text/css"/>
+    <title>See products</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+<div th:replace="fragments/general :: top"></div>
+<div th:each="product : ${products}">
+    <span th:text="${product.name}">name</span>
+    <span th:text="${product.price}">price</span>
+    <a th:href="@{|/cart/add?pid=${product.id}|}">Add to cart</a>
+</div>
+<div th:each="product : ${products}">
+    <div th:if="${product.type == 'SKINCARE'}">
+        <!-- Skincare product details -->
+        <span th:text="${product.name}">name</span>
+        <span th:text="${product.price}">price</span>
+    </div>
+    <div th:if="${product.type == 'MAKEUP'}">
+        <!-- Makeup product details -->
+        <span th:text="${product.name}">name</span>
+        <span th:text="${product.price}">price</span>
+    </div>
+</div>
+
+</body>
+</html>

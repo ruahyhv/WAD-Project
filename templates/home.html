@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}" type="text/css"/>
+</head>
+<body>
+<div th:replace="fragments/general :: header"></div>
+
+<div class="photo-gallery">
+    <div class="wide-photo">
+        <img th:src="@{/images/ss.jpg}" alt="Wide Photo">
+        <div class="overlay">
+            <p class="overlay-text">Find your perfect sunscreen</p>
+            <p class="overlay-text1">Take care of your skin in every season</p>
+            <a th:href="@{/products}"><button class="overlay-button">Shop now</button></a>
+        </div>
+    </div>
+    <div class="small-photos">
+        <div class="small-photo">
+            <img th:src="@{/images/sk.jpg}" alt="Small Photo 1">
+            <a th:href="@{/products}"><button class="overlay-button">Skincare</button></a>
+        </div>
+        <div class="small-photo">
+            <img th:src="@{/images/suga.jpg}" alt="Small Photo 2">
+            <a th:href="@{/trending}"><button class="overlay-button">Trending</button></a>
+        </div>
+        <div class="small-photo">
+            <img th:src="@{/images/trending.jpg}" alt="Small Photo 3">
+            <a th:href="@{/new}"><button class="overlay-button">New</button></a>
+        </div>
+    </div>
+</div>
+
+<div th:replace="fragments/general :: footer"></div>
+</body>
+</html>

@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org"
-      lang="en">
+      xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
     <link rel="stylesheet" th:href="@{/css/styles.css}" type="text/css"/>
+    <title>Home page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
 </head>
 <body>
-<div th:replace="fragments/general :: header"></div>
+<div th:replace="~{fragments/general :: top}"></div>
 
+<div class="search-container">
+    <input type="text" class="search-input" placeholder="Search...">
+    <button type="submit" class="search-button">Search</button>
+</div>
 <div class="photo-gallery">
     <div class="wide-photo">
         <img th:src="@{/images/ss.jpg}" alt="Wide Photo">
@@ -27,15 +30,15 @@
         </div>
         <div class="small-photo">
             <img th:src="@{/images/suga.jpg}" alt="Small Photo 2">
-            <a th:href="@{/trending}"><button class="overlay-button">Trending</button></a>
+            <a href="#"><button class="overlay-button">Trending</button></a>
         </div>
         <div class="small-photo">
             <img th:src="@{/images/trending.jpg}" alt="Small Photo 3">
-            <a th:href="@{/new}"><button class="overlay-button">New</button></a>
+            <a th:href="@{/products}"><button class="overlay-button">New</button></a>
         </div>
     </div>
 </div>
 
-<div th:replace="fragments/general :: footer"></div>
+<div th:replace="~{fragments/general :: bottom}"></div>
 </body>
 </html>

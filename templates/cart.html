@@ -1,22 +1,32 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-  <link rel="stylesheet" th:href="@{/css/main.css}" type="text/css"/>
-  <title>Cart</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" th:href="@{/css/cart.css}" type="text/css"/>
+    <title>See cart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script th:src="@{/js/cart.js}" defer></script>
 </head>
 <body>
-<div th:replace="fragments/general :: top"></div>
-<form th:object="${cart}" th:action="@{/cart/checkout}" method="post">
-  <div th:each="entry : ${cart.products}">
-    <span th:text="${entry.key.name}">Product Name</span>
-    <span>Quantity: </span>
-    <input type="number" th:value="${entry.value}" th:name="quantities[__${entry.key.id}__]" min="1"/>
-  </div>
-  <div>Total Price: <span th:text="${totalPrice}">0</span></div>
-  <button type="submit">Checkout</button>
-</form>
+<div th:replace="~{fragments/general :: top}"/>
+    <h2>Cart</h2>
+    <div th:if="${cart.items}">
+        <form th:action="@{/cart/checkout}" method="post">
+            <ul>
+                <li th:each="item, iterStat : ${cart.items}" class="cart-item" th:data-product-id="${item.product.id}">
+                    <span th:text="${item.product.name}">Product Name</span>
+                    <input type="number" name="quantities" class="item-quantity" th:value="${item.qty}" min="1" />
+                    <span class="item-price" th:text="${item.product.price * item.qty}">Price</span>
+                </li>
+            </ul>
+            <div id="total-price">
+                Total: <span th:text="${#numbers.formatDecimal(cart.getTotalPrice(), 1, 'POINT', 2, 'COMMA')}">0.00</span>
+            </div>
+            <input type="submit" value="Checkout"/>
+        </form>
+    </div>
+    <div th:if="${successMessage}" th:text="${successMessage}" class="alert alert-success"></div>
+    <div th:if="${errorMessage}" th:text="${errorMessage}" class="alert alert-danger"></div>
+<div th:replace="~{fragments/general :: bottom}"></div>
 </body>
 </html>

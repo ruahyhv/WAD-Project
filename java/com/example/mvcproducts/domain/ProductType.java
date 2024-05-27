@@ -1,3 +1,3 @@
 package com.example.mvcproducts.domain;
 
-public enum ProductType {SKINCARE, MAKEUP}
+public enum ProductType {MAKEUP, SKINCARE}

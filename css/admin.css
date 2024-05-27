@@ -1,0 +1,89 @@
+/* Existing CSS */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF5F7;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EA7BA8;
+    font-weight: bold;
+}
+
+.ah2 {
+    font-size: 22px;
+    color: #AF367F;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* New CSS for form styling */
+
+form {
+    width: 300px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    margin-top: 50px; /* Add some top margin */
+    background-color: rgba(255, 255, 255, 0.7); /* Set background color */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+input[type="text"],
+select,
+input[type="file"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #AF367F; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    box-sizing: border-box;
+    background-color: #FFFFFF; /* Set background color */
+    color: #333; /* Set text color */
+}
+
+input[type="text"]:focus,
+select:focus,
+input[type="file"]:focus {
+    outline: none; /* Remove outline on focus */
+    border-color: #b64188; /* Change border color on focus */
+}
+
+input[type="submit"] {
+    background-color: #AF367F;
+    color: white;
+    font-weight: bold;
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #b64188;
+}

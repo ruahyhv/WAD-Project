@@ -1,0 +1,176 @@
+body {
+    background-image: linear-gradient(to right, #AF367F, white);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: rgba(219, 163, 196, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EA7BA8;
+    font-weight: bold;
+}
+
+.ah2 {
+    font-size: 22px;
+    color: #AF367F;
+    margin-left: 410px;
+}
+
+.contact {
+    color: #EA7BA8;
+    font-weight: bold;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #AF367F;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    color: #CB7CAB;
+    margin-left: 400px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #AF367F;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.search-button:hover {
+    background-color: #b64188;
+}
+
+/* Additional styles */
+.poz {
+    margin-left: 10px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: #AF367F;
+    text-align: center;
+}
+
+h2 {
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #CB7CAB;
+    text-align: center;
+}
+
+button {
+    border-radius: 4px;
+    border: none;
+    background-color: #F25292;
+    color: white;
+    font-size: 20pt;
+    height: 85px;
+    width: 95px;
+    box-shadow: 1px 1px 8px gray;
+    cursor: pointer;
+}
+
+.bot a:link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.create button {
+    border-radius: 4px;
+    border: none;
+    background-color: #804cc9;
+    color: white;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    height: 45px;
+    width: 250px;
+    box-shadow: 1px 1px 8px gray;
+    cursor: pointer;
+}
+
+#msgAgree, #msgUsername, #msgPassword {
+    font-size: 13px;
+    font-family: 'Nunito', sans-serif;
+    color: red;
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(219, 163, 196, 0.6);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    display: inline;
+    margin: 0 20px;
+}

@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF5F7;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EA7BA8;
+    font-weight: bold;
+}
+
+.ah2 {
+    font-size: 22px;
+    color: #AF367F;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item span {
+    flex: 1;
+}
+
+.cart-item input {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.item-price {
+    color: #EA7BA8; /* Pink for item prices */
+    margin-left: 10px;
+}
+
+#total-price {
+    font-weight: bold;
+    color: #AF367F;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #AF367F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.alert {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #DBA3C4; /* Light pink for success messages */
+    color: white;
+}
+
+.alert-danger {
+    background-color: #FF5A5F; /* Red for error messages */
+    color: white;
+}
+
+h2 {
+    color: #AF367F; /* Dark pink for headings */
+}
+
+footer {
+    background-color: rgba(219, 163, 196, 0.6);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    display: inline;
+    margin: 0 20px;
+}
+
+/* Your existing CSS styles */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Make the container fill the entire viewport height */
+}
+
+.cart-container {
+    width: 50%; /* Adjust the width of the cart container as needed */
+}

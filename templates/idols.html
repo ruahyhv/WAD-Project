@@ -1,10 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <link rel="stylesheet" th:href="@{/css/stylesidols.css}" type="text/css"/>
+  <title>Idols</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
 </head>
 <body>
+<div th:replace="~{fragments/general :: top}"></div>
 
+<div class="container">
+  <!-- Trending idol's skincare routine title -->
+  <div class="section-title light-pink">Trending idol's skincare routine</div>
+
+  <!-- First row of pictures -->
+  <div class="row" id="row1">
+    <!-- First column -->
+    <div class="column">
+      <div class="image-container">
+        <img th:src="@{/images/suga.jpg}" alt="Suga">
+      </div>
+      <p>Morning routine:</p>
+      <ol>
+        <li>Cleansing </li>          <img th:src="@{/images/step11.jpg}" alt="Step 1">
+        <li>Double Cleansing </li>        <img th:src="@{/images/step12.jpg}" alt="Step 2">
+        <li>Exfoliating </li>        <img th:src="@{/images/step13.jpg}" alt="Step 2">
+        <li>Hydration </li>        <img th:src="@{/images/step14.jpg}" alt="Step 2"></li>
+        <li>Serum/Essence </li>        <img th:src="@{/images/step15.jpg}" alt="Step 2">
+        <li>Sun protection </li>        <img th:src="@{/images/step16.jpg}" alt="Step 2">
+        <li>Spot treatment </li>        <img th:src="@{/images/step17.jpg}" alt="Step 7">
+      </ol>
+    </div>
+    <!-- Second column -->
+    <div class="column">
+      <div class="image-container">
+        <img th:src="@{/images/soyeon.jpg}" alt="Suga">
+      </div>
+      <p>Morning routine:</p>
+      <ol>
+        <li>Oil Cleansing  </li>            <img th:src="@{/images/step21.jpg}" alt="Step 1">
+        <li>Water Cleansing </li>            <img th:src="@{/images/step22.jpg}" alt="Step 2">
+        <li>Exfoliating  </li>            <img th:src="@{/images/step23.jpg}" alt="Step 2">
+        <li>Toner  </li>            <img th:src="@{/images/step24.jpg}" alt="Step 2">
+        <li>Hydration</li>              <img th:src="@{/images/step25.jpg}" alt="Step 2">
+        <li>Serum </li>             <img th:src="@{/images/step26.jpg}" alt="Step 2">
+        <li>Sun protection</li>              <img th:src="@{/images/step27.jpg}" alt="Step 7">
+      </ol>
+    </div>
+    <!-- Third column -->
+    <div class="column">
+      <div class="image-container">
+        <img th:src="@{/images/san.jpg}" alt="Suga">
+      </div>
+      <p>Morning routine:</p>
+      <ol>
+        <li>Cleansing</li>          <img th:src="@{/images/step31.jpg}" alt="Step 1">
+        <li>Exfoliating </li>         <img th:src="@{/images/step32.jpg}" alt="Step 2">
+        <li>Serum</li>          <img th:src="@{/images/step33.jpg}" alt="Step 2">
+        <li>Essence </li>         <img th:src="@{/images/step34.jpg}" alt="Step 2">
+        <li>Sun protection </li>         <img th:src="@{/images/step35.jpg}" alt="Step 2">
+      </ol>
+    </div>
+    <!-- Fourth column -->
+    <div class="column">
+      <div class="image-container">
+        <img th:src="@{/images/taeyong.jpg}" alt="Suga">
+      </div>
+      <p>Morning routine:</p>
+      <ol>
+        <li>Oil Cleansing</li>          <img th:src="@{/images/step41.jpg}" alt="Step 1">
+        <li>Double Cleansing </li>         <img th:src="@{/images/step42.jpg}" alt="Step 2">
+        <li>Exfoliating </li>         <img th:src="@{/images/step43.jpg}" alt="Step 2">
+        <li>Hydration  </li>        <img th:src="@{/images/step44.jpg}" alt="Step 2">
+        <li>Serum/Essence </li>         <img th:src="@{/images/step45.jpg}" alt="Step 2">
+        <li>Sun protection</li>          <img th:src="@{/images/step46.jpg}" alt="Step 2">
+      </ol>
+    </div>
+  </div>
+
+  <!-- New section -->
+  <div class="new-section">
+    <!-- First row -->
+    <div class="row">
+      <div class="button-container">
+        <button class="new-button">Explanations</button>
+      </div>
+    </div>
+    <!-- Second row -->
+    <div class="row">
+      <h3 class="newh3">Step 1: Oil-based Cleansing Product</h3>
+      <p class = "newp">In the routine, the double cleansing method is used. As the name suggests, this means cleansing your face twice.
+        In the first cleansing step, you use an oil-based cleanser to remove your makeup, sunscreen, and daily moisturizer.
+        You apply a small amount to your skin and gently massage it in.
+        Then, you add a bit of water to emulsify the oil, which you can rinse off your face. Afterward, pat your face dry with a clean, dry towel.
+      </p>
+
+      <h3 class="newh3">Step 2: Water-based Cleansing Product</h3>
+      <p class = "newp">After your oil cleanser, you use a water-based cleansing product. This helps remove any remaining impurities like sweat, bacteria,
+        and traces of the oil cleanser that may have been left on the skin.
+      </p>
+      <h3 class="newh3">Step 3: Exfoliation</h3>
+      <p class = "newp">We recommend following this step only once a week. Exfoliation involves using a peel or scrub to remove dead skin cells, resulting in smoother,
+        clearer, and softer skin. Additionally, exfoliation helps other skincare products penetrate your skin more effectively for better results.
+        Warning: Exfoliating too frequently or for too long can lead to irritated, red skin.
+      </p>
+      <h3 class="newh3">Step 4: Toner</h3>
+      <p class = "newp">Toners can remove residual sebum or product residues that may remain on the skin after cleansing.
+        They help restore the pH balance of your skin and prepare your skin for the absorption of subsequent skincare products, enhancing their effectiveness.
+        Toners often contain moisturizing ingredients like hyaluronic acid or glycerin, which help hydrate the skin and retain moisture.
+      </p>
+      <h3 class="newh3">Step 5: Essence</h3>
+      <p class = "newp">Essences are not as well-known in the West. The product is slightly more watery than a serum but more concentrated than a toner.
+        It's an essential part of the Korean skincare routine because it provides hydration, nourishment, and is often rich in antioxidants.
+        Moreover, it helps with the absorption of products applied after this step.
+
+      </p>
+      <h3 class="newh3">Step 6: Serum, Ampoules, Spot Treatment</h3>
+      <p class = "newp">
+        In this step, you'll take specific actions tailored to your skin concern. For example, if you have issues with discoloration, opt for a vitamin C serum.
+        If you want to combat skin aging, choose peptides and retinoids, as they stimulate cell renewal and firm the skin. If you have blemishes,
+        treat them with a spot treatment product or use a pimple patch.
+
+      </p>
+      <h3 class="newh3">Step 7: Sheet Mask</h3>
+      <p class = "newp">Similar to exfoliation, this step doesn't need to be done daily but is recommended once a week. A sheet mask is a thin sheet or mask soaked in a
+        high concentration of hydrating ingredients such as hyaluronic acid, glycerin, or aloe vera extract. Different types of sheet masks are available to
+        address various skincare needs, including hydration, brightening, calming, firming, and more.</p>
+      <h3 class="newh3">Step 8: Eye Cream</h3>
+      <p class = "newp">The skin around your eyes is thinner and often drier, making it more prone to showing signs of aging. An eye cream provides specialized care for this delicate area.
+        Eye creams come in various formulations, such as extra hydration, reducing fine lines or wrinkles, diminishing dark circles or puffiness, brightening,
+        and refreshing, among others.</p>
+      <h3 class="newh3">Step 9: Moisturizer</h3>
+      <p class = "newp">The day or night cream hydrates your skin and helps seal in the active ingredients from previous steps, keeping your skin moisturized.
+        Using a moisturizer is essential for all skin types. You can opt for a lighter gel cream for daytime and a richer cream for nighttime.
+      </p>
+      <h3 class="newh3">Step 10: SPF</h3>
+      <p class = "newp">In the morning, always finish your skincare routine with the application of sunscreen. Sunscreen is the best defense against signs of skin aging.
+        Even on cloudy days or days when you stay indoors, UVA radiation can penetrate your skin, damaging collagen and elastin.
+        Damage from UVA is only visible after some time: pigmentation, wrinkles, sagging skin, and an increased risk of skin cancer.
+        Additionally, the effectiveness of previously applied active ingredients diminishes when they come into contact with the sun.</p>
+    </div>
+  </div>
+
+
+</div>
+
+<div th:replace="~{fragments/general :: bottom}"></div>
 </body>
 </html>

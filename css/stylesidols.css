@@ -1,0 +1,163 @@
+/* Your existing CSS code remains unchanged */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF5F7; /* Very light pink background */
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EA7BA8;
+    font-weight: bold;
+}
+
+.ah2 {
+    font-size: 22px;
+    color: #AF367F;
+    margin: 0 auto; /* Center Korean Wave */
+}
+
+.contact {
+    color: #EA7BA8;
+    font-weight: bold;
+    margin-right: 20px; /* Added margin to separate from the search button */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #AF367F;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    color: #CB7CAB;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #AF367F;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.search-button:hover {
+    background-color: #b64188;
+}
+
+.poz {
+    height: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    display: inline;
+    margin: 0 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Change flex-direction to column */
+    align-items: center; /* Center items horizontally */
+    margin: 20px;
+}
+
+.section-title {
+    color: #AF367F;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.light-pink {
+    background-color: #F7D1E4;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    height: 200px; /* Set a fixed height for all image containers */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+
+.text {
+    margin-bottom: 10px;
+}
+
+.row .new-button {
+    padding: 10px 20px;
+    background-color: #DBA3C4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px lightgrey;
+    justify-content: center;
+    align-items: center;
+}
+.newh3{
+    color: #AF367F;
+}
+
+.newp {
+    color: #DBA3C4;
+}

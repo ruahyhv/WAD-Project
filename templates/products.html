@@ -2,30 +2,61 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
-    <link rel="stylesheet" th:href="@{/css/main.css}" type="text/css"/>
-    <title>See products</title>
+    <link rel="stylesheet" th:href="@{/css/stylessk.css}" type="text/css"/>
+    <title>Products</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
 </head>
 <body>
-<div th:replace="fragments/general :: top"></div>
-<div th:each="product : ${products}">
-    <span th:text="${product.name}">name</span>
-    <span th:text="${product.price}">price</span>
-    <a th:href="@{|/cart/add?pid=${product.id}|}">Add to cart</a>
-</div>
-<div th:each="product : ${products}">
-    <div th:if="${product.type == 'SKINCARE'}">
-        <!-- Skincare product details -->
-        <span th:text="${product.name}">name</span>
-        <span th:text="${product.price}">price</span>
-    </div>
-    <div th:if="${product.type == 'MAKEUP'}">
-        <!-- Makeup product details -->
-        <span th:text="${product.name}">name</span>
-        <span th:text="${product.price}">price</span>
-    </div>
-</div>
+<div th:replace="~{fragments/general :: top}"></div>
 
+<div class="container">
+    <div class="left">
+        <h3 class="section-title">Skincare Products</h3>
+        <div class="rectangle light-pink">
+            <p><strong>Eyes</strong></p>
+            <p><strong>Lips</strong></p>
+            <p><strong>Brows</strong></p>
+            <p><strong>Face</strong></p>
+            <p><strong>Palettes</strong></p>
+            <p><strong>Brushes</strong></p>
+        </div>
+        <div class="rectangle dark-pink">
+            <p><strong>Filters</strong></p>
+            <ul>
+                <li>Brand</li>
+                <li>Anua</li>
+                <li>Cosrx</li>
+                <li>Laneige</li>
+                <li>Missha</li>
+                <li>Purito</li>
+                <li>Skin1004</li>
+                <li>See more</li>
+            </ul>
+            <ul>
+                <li>Color</li>
+                <li>UV protection</li>
+                <li>Type</li>
+                <li>Ingredients</li>
+                <li>Rating</li>
+                <li>Stock</li>
+            </ul>
+        </div>
+    </div>
+    <div class="right">
+        <div th:each="product : ${products}" class="product-item">
+            <div class="product-image">
+                <img th:src="@{|/products/${product.id}/image|}" width="150" height="150">
+            </div>
+            <div class="product-details">
+                <span th:text="${product.name}">name</span>
+                <span class="product-price" th:text="${product.price}"></span>
+                <a th:href="@{|/cart/add?pid=${product.id}|}" class="add-to-cart">Add to cart</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div th:replace="~{fragments/general :: bottom}"></div>
 </body>
 </html>

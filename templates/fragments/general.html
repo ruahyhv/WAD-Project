@@ -2,36 +2,39 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
-  <link rel="stylesheet" th:href="@{/css/styles.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/styles.css}" type="text/css"/>
+    <title>General Layout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
 </head>
 <body>
-<div th:fragment="header">
-  <header>
-    <nav>
-      <ul>
-        <li><a th:href="@{/products}">Skincare</a></li>
-        <li><a th:href="@{/products}">Makeup</a></li>
-        <li><a th:href="@{/brands}">Brands</a></li>
-        <li><a th:href="@{/idols}">Idols</a></li>
-      </ul>
-    </nav>
-    <a th:href="@{/home}" class="ah2"><h2>Korean Wave</h2></a>
-    <div class="search-container">
-      <input type="text" class="search-input" placeholder="Search...">
-      <button type="submit" class="search-button">Search</button>
-    </div>
-    <a th:href="@{/sign-in}"><img class="poz" th:src="@{/images/sc.png}"></a>
-    <a href="#"><img class="poz" th:src="@{/images/sc.png}"></a>
-    <a th:href="@{/contact}" class="contact">Contact us</a>
-  </header>
+<div th:fragment="top">
+    <header>
+        <div class="header">
+           <a th:href="@{/}"><span class="header-text">Korean Wave</span></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a th:href="@{/}" th:if="${#authorization.expression('isAuthenticated()')}">Home</a></li>
+                <li><a th:href="@{/products}" th:if="${#authorization.expression('isAuthenticated()')}">Products</a></li>
+                <li><a th:href="@{/brands}" th:if="${#authorization.expression('isAuthenticated()')}">Brands</a></li>
+                <li><a th:href="@{/idols}" th:if="${#authorization.expression('isAuthenticated()')}">Idols</a></li>
+                <li><a th:href="@{/admin}" th:if="${#authorization.expression('hasRole(''ADMIN'')')}">Admin</a></li>
+                <li><a th:href="@{/logout}" th:if="${#authorization.expression('isAuthenticated()')}">Logout</a></li>
+                <li><a th:href="@{/cart}" th:if="${#authorization.expression('isAuthenticated()')}">See cart</a></li>
+                <li><a th:href="@{/login}" th:if="${#authorization.expression('!isAuthenticated()')}">Login</a></li>
+                <li><a th:href="@{/register}" th:if="${#authorization.expression('!isAuthenticated()')}">Register</a></li>
+            </ul>
+        </nav>
+    </header>
 </div>
 
-<div th:fragment="footer">
-  <footer>
-    <p>@2024</p>
-    <a th:href="@{/home}"><p>Korean Wave</p></a>
-    <p>Terms of service</p>
-  </footer>
+<div th:fragment="bottom">
+    <footer>
+        <p>@2024</p>
+        <a th:href="@{/home}"><p>Korean Wave</p></a>
+        <p>Terms of service</p>
+    </footer>
 </div>
 </body>
 </html>

@@ -1,0 +1,135 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF5F7; /* Very light pink background */
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EA7BA8;
+    font-weight: bold;
+}
+
+/* Center Korean Wave */
+.ah2 {
+    font-size: 22px;
+    color: #AF367F;
+    margin: 0 auto;
+}
+
+.contact {
+    color: #EA7BA8;
+    font-weight: bold;
+    margin-right: 20px; /* Added margin to separate from the search button */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #AF367F;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    color: #CB7CAB;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #AF367F;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.search-button:hover {
+    background-color: #b64188;
+}
+
+/* Adjust spacing */
+.poz {
+    height: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Footer styles */
+footer {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    display: inline;
+    margin: 0 20px;
+}
+
+/* Content container */
+.content-container {
+    padding: 20px 40px; /* Add padding to the left and right */
+}
+
+/* Main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Row styles */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Column styles */
+.column {
+    flex: 1;
+    min-width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Text within columns */
+.column p {
+    display: block; /* Display as block-level elements */
+}

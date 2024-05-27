@@ -23,3 +23,24 @@ public class UserRepoUserDetailsService implements UserDetailsService {
         throw new UsernameNotFoundException("User "+s+" not found");
     }
 }
+/*
+
+@Service
+public class CustomUserDetailsService implements UserDetailsService {
+
+    private final UserRepository ;
+
+    public CustomUserDetailsService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        User  = userRepository.findByUsername(username);
+        if (user == null) {
+            throw new UsernameNotFoundException("User not found");
+        }
+        return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), user.getAuthorities());
+    }
+}
+ */

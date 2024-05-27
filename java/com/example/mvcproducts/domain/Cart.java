@@ -1,35 +1,42 @@
 package com.example.mvcproducts.domain;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Cart {
-    private Map<Product, Integer> products = new HashMap<>();
+    private List<OrderLineItem> items;
+
+    public Cart() {
+        this.items = new ArrayList<>();
+    }
 
     public void addProduct(Product product) {
-        products.putIfAbsent(product, 0);
-        products.put(product, products.get(product) + 1);
+        for (OrderLineItem item : items) {
+            if (item.getProduct().equals(product)) {
+                item.setQty(item.getQty() + 1);
+                return;
+            }
+        }
+        items.add(new OrderLineItem(null, product, 1));
     }
 
     public void removeProduct(Product product) {
-        if (products.containsKey(product) && products.get(product) > 1) {
-            products.put(product, products.get(product) - 1);
-        } else {
-            products.remove(product);
-        }
-    }
-
-    public Map<Product, Integer> getProducts() {
-        return products;
-    }
-
-    public double getTotalPrice() {
-        return products.entrySet().stream()
-                .mapToDouble(entry -> entry.getKey().getPrice() * entry.getValue())
-                .sum();
+        items.removeIf(item -> item.getProduct().equals(product));
     }
 
     public void clear() {
-        products.clear();
+        items.clear();
+    }
+
+    public List<OrderLineItem> getItems() {
+        return items;
+    }
+
+    public void clearItems() {
+        this.items.clear();
+    }
+
+    public double getTotalPrice() {
+        return items.stream().mapToDouble(item -> item.getProduct().getPrice() * item.getQty()).sum();
     }
 }

@@ -2,12 +2,91 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Brands</title>
+  <link rel="stylesheet" th:href="@{/css/stylesbrands.css}" type="text/css"/>
+  <title>Brands</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
 </head>
 <body>
-<h1>Brands</h1>
-<ul>
-    <li th:each="brand : ${brands}" th:text="${brand}"></li>
-</ul>
+<div th:replace="~{fragments/general :: top}"></div>
+<div class="content-container">
+  <div class="container">
+    <div class="row">
+      <div class="column">#</div>
+      <div class="column">A</div>
+      <div class="column">B</div>
+      <div class="column">C</div>
+      <div class="column">D</div>
+      <div class="column">E</div>
+      <div class="column">F</div>
+      <div class="column">G</div>
+      <div class="column">H</div>
+      <div class="column">I</div>
+      <div class="column">J</div>
+      <div class="column">K</div>
+      <div class="column">L</div>
+      <div class="column">M</div>
+      <div class="column">N</div>
+      <div class="column">O</div>
+      <div class="column">P</div>
+      <div class="column">Q</div>
+      <div class="column">R</div>
+      <div class="column">S</div>
+      <div class="column">T</div>
+      <div class="column">U</div>
+      <div class="column">V</div>
+      <div class="column">W</div>
+      <div class="column">X</div>
+      <div class="column">Y</div>
+      <div class="column">Z</div>
+    </div>
+
+    <div class="row">
+      <div class="column">#</div>
+      <div class="column">3WClinic</div>
+      <div class="column">3CE</div>
+    </div>
+
+    <div class="row">
+      <div class="column">A</div>
+      <div class="column">Abib</div>
+      <div class="column">AMPLE:N</div>
+      <div class="column">A'pieu</div>
+      <div class="column">AHC</div>
+      <div class="column">Amuse</div>
+      <div class="column">Axis-Y</div>
+    </div>
+
+    <div class="row">
+      <div class="column">B</div>
+      <div class="column">Beauty of Joseon</div>
+      <div class="column">Benton</div>
+      <div class="column">Banila Co.</div>
+      <div class="column">Bonabella</div>
+      <div class="column">Botonix</div>
+    </div>
+
+    <div class="row">
+      <div class="column">C</div>
+      <div class="column">Cell Fusion C</div>
+      <div class="column">Clio</div>
+      <div class="column">Cos de BAHA</div>
+      <div class="column">Centenella</div>
+      <div class="column">CNP</div>
+      <div class="column">Cosrx</div>
+    </div>
+
+    <div class="row">
+      <div class="column">D</div>
+      <div class="column">Dear Klairs</div>
+      <div class="column">Dewytree</div>
+      <div class="column">Dr Ceuracle</div>
+      <div class="column">Dr G</div>
+      <div class="column">Dr Jart</div>
+    </div>
+  </div>
+</div>
+
+<div th:replace="~{fragments/general :: bottom}"></div>
 </body>
 </html>
